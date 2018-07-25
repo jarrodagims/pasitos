@@ -1,24 +1,147 @@
 
 .sidebar-content {
-  margin-top: 45px;
 
   .post-title {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 39px;
-    color: #1E242D;
+    color: #8F9699;
   }
 
   @media screen and (min-width: $screen-md-min) {
+    margin-top: 300px;
+    
     .page-content, #sidebar {
       padding-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .img-responsive {
+      max-width: 40%;
+      height: auto; 
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+     margin-top: 200px;
+
+    .img-responsive {
+      max-width: 30%;
+      height: auto; 
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
 
 body #main .container article #sidebar {
   float: right;
-  max-width: 425px;
-  margin-left: 3em;
+  max-width: 397px;
+  margin-left: 4em;
+  text-align: center;
+
+  .our-services {
+    background: url('../img/bg-sidebar.jpg') 0 0 no-repeat;
+    background-size: cover;
+    padding: 80px;
+    color: $white;
+
+    h4 {
+      font-weight: 300;
+    }
+
+    svg {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    color: $white;
+  }
+
+  h4 {
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .ribbon h4 {
+    margin: 0 0 24px;
+    font-size: 21px;
+  }
+
+  .ribbon {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @media screen and (max-width: $grid-float-breakpoint-max) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .sidebar-buttons {
+    background: url('../img/bw-sidebar.jpg') 0 0 no-repeat;
+    background-size: cover;
+    height: 486px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 22px 38px;
+
+    &.map {
+      padding: 0 0;
+    }
+
+    .btn {
+      width: 50%;
+    }
+
+    .btn-primary {
+      margin-right: 11px;
+    }
+
+    @media screen and (max-width: $grid-float-breakpoint-max) {
+      height: 200px;
+    }
+  }
+
+  #logos {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    img {
+      max-height: 40px;
+      margin: 20px auto;
+    }
+
+    @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      column-count: 1;
+    }
+
+    flex-wrap: wrap;
+    display: flex;
+
+    .img-col {
+      width: 33%;
+    }
+  }
 
   .banner {
     padding: 25px 0;
@@ -111,17 +234,14 @@ body #main .container article #sidebar {
       .col-xs-6 {
         flex: 0 auto;
         border-left: 0;
-
-        &:first-child, &:nth-child(2) {
-          border-bottom: 1px solid #cacccd;
-        }
+        border-bottom: 1px solid #fff;
 
         a {
           border-left: 0;
         }
 
         &:nth-child(even) {
-          border-left: 1px solid #cacccd;
+          border-left: 1px solid #fff;
         }
 
         .title {
@@ -143,6 +263,7 @@ body #main .container article #sidebar {
 
     .title {
       font-size: 14px;
+      max-width: 90%;
     }
 
     svg {
@@ -161,15 +282,7 @@ body #main .container article #sidebar {
   }
 
   @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    max-width: 300px;
-
-    .ctf-author-box {
-      display: none;
-    }
-
-    .ctf-tweet-content {
-      margin-left: 0 !important;
-    }
+    max-width: 400px;
   }
 
   .green-box {
@@ -208,209 +321,14 @@ body #main .container article #sidebar {
       }
     }
   }
-
-  .right-home-sidebar {
-    flex-direction: row;
-    padding: 0;
-    margin-top: 30px;
-
-    .shadow {
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 24px;
-
-      .box {
-        width: 50%;
-        height: 112px;
-        font-size: 10px;
-
-        .title {
-          font-size: 12px;
-        }
-
-        &:first-child {
-          margin-right: 10px;
-        }
-
-        &.box-top {
-          padding: 0 0;
-          align-items: center;
-
-          .price {
-            font-size: 27px;
-            margin-top: auto;
-          }
-        }
-
-        &.box-bottom {
-          margin-top: 0;
-        }
-
-        .bottom {
-          margin: auto 0 0;
-          padding: 1.5em;
-          width: 100%;
-        }
-      }
-    }
-
-    .bottom {
-      font-size: 10px;
-    }
-
-    h3 {
-      font-size: 20px;
-    }
-
-    > div {
-      -webkit-box-shadow: 0px 0px 58px -9px rgba(0, 0, 0, 0.33);
-      -moz-box-shadow: 0px 0px 58px -9px rgba(0, 0, 0, 0.33);
-      box-shadow: 0px 0px 58px -9px rgba(0, 0, 0, 0.33);
-
-      h4 {
-        color: $sherpa-brand-primary;
-        font-weight: 500;
-        font-size: 16px;
-      }
-
-      background: #EFEFEF;
-      text-align: center;
-      padding-bottom: 33px;
-      padding-top: 20px;
-
-      a {
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: $grid-float-breakpoint-max) {
-      margin-bottom: 30px;
-    }
-  }
-
-  #contact-form {
-    background: $dark-blue;
-    text-align: center;
-    padding: 0;
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 15px;
-
-    form {
-      margin: 2em auto;
-      padding: 0 0;
-      text-align: center;
-      color: #fff;
-      display: inline-block;
-
-      h1,
-      h2,
-      h3,
-      h4 {
-        color: #fff;
-      }
-
-      h4 {
-        font-size: 20px;
-      }
-
-      .form-group {
-        display: block;
-        max-width: 100%;
-        justify-content: space-around;
-        margin: 0 auto;
-        padding: 0 1.5em;
-
-        label {
-          flex: 1;
-          width: 100%;
-
-          input {
-            width: 100%;
-          }
-        }
-
-        .col-md-6 {
-          margin: 0 auto;
-        }
-      }
-
-      input[type="text"],
-      input[type="email"],
-      input[type="tel"],
-      textarea {
-        background: rgba(255, 255, 255, 0.5);
-        border: 0;
-        color: #fff;
-        padding: 1em;
-        margin-bottom: 1.25em;
-
-        &::placeholder {
-          color: #fff;
-          font-weight: normal;
-        }
-      }
-
-      textarea {
-        overflow: hidden;
-        height: 2em;
-        padding-bottom: 1.25em;
-      }
-
-      input[type="submit"] {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 0;
-        background: $sherpa-brand-primary;
-        color: $white;
-      }
-
-      p {
-        margin-bottom: 2em;
-      }
-    }
-
-    .textwidget {
-      background: #e6e6e6;
-      padding: 2em;
-      display: none !important;
-    }
-  }
-
-  #contact-form {
-    border-bottom: 1px solid #cacccd;
-    
-    @media screen and (min-width: $screen-sm-min) {
-      margin: 0 0 0 0;
-      padding: 0 0 0 0;
-
-      form {
-        h4 {
-          margin-bottom: 1.5em;
-        }
-
-        input[type="submit"] {
-          width: 144px;
-        }
-      }
-
-      .testimonials-widget {
-        h4 {
-          margin-bottom: 1.2em;
-        }
-        .btn {
-          width: 144px;
-        }
-      }
-    }
-  }
 }
 
 body #main .container article #sidebar {
+
+  .btn.btn-border {
+    padding: 17px;
+    font-size: 10px;
+  }
 
   p {
     color: $white;
@@ -459,6 +377,8 @@ body #main .container article #sidebar {
 @media screen and (min-width: $screen-md-min) {
   body #main .container article #sidebar {
     margin-bottom: 2em;
+    position: relative;
+    z-index: 99;
   }
 }
 
@@ -551,8 +471,8 @@ body #main .container article #sidebar {
   }
 
   body #main .container {
-    padding-left: 0;
-    padding-right: 0;
+//     padding-left: 0;
+//     padding-right: 0;
 
     .content {
       padding-left: 15px;

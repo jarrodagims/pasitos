@@ -6,7 +6,7 @@ function sherpa_excerpt() {
 	echo $excerpt;
 	echo "<br /><br />";
 	echo '<div class="clear"></div>';
-	echo '<a href="' . $permalink . '" class="btn btn-read-more pull-right">' . __('Read More', 'sherpa') . '</a>' . "\n";
+	echo '<a href="' . $permalink . '" class="btn btn-border btn-read-more pull-right">' . __('Read More', 'sherpa') . '</a>' . "\n";
 	echo '<div class="clear"></div>';
 	
 }

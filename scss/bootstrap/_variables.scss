@@ -14,8 +14,8 @@ $gray: lighten($gray-base, 33.5%) !default; // #555
 $gray-light: lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary: #3982F7 !default; // #337ab7
-$brand-success: #FEF102 !default;
+$brand-primary: #FFB206 !default; // #337ab7
+$brand-success: #FFB206 !default;
 $brand-info: #5bc0de !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #d9534f !default;
@@ -148,17 +148,17 @@ $table-border-color: #ddd !default;
 
 $btn-font-weight: normal !default;
 
-$btn-default-color: #333 !default;
-$btn-default-bg: transparent !default;
-$btn-default-border: #3982F7 !default;
+$btn-default-color: #FFF !default;
+$btn-default-bg: #ED511B !default;
+$btn-default-border: #ED511B !default;
 
-$btn-primary-color: #606060 !default;
-$btn-primary-bg: transparent !default;
-$btn-primary-border: #3982F7 !default;
+$btn-primary-color: #FFFFFF !default;
+$btn-primary-bg: #ED511B !default;
+$btn-primary-border: #ED511B !default;
 
 $btn-success-color: #606060 !default;
-$btn-success-bg: transparent !default;
-$btn-success-border: #3982F7 !default;
+$btn-success-bg: #ED511B !default;
+$btn-success-border: #ED511B !default;
 
 $btn-info-color: #606060 !default;
 $btn-info-bg: $brand-info !default;

@@ -99,6 +99,14 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 function liveReload(){
-    echo '<script>document.write(\'<script src="http://\' + (location.host    \'localhost\').split(\':\')[0] +\':35729/livereload.js?snipver=1"></\' + \'script>\')</script>';
+    if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
+        echo '<script>document.write(\'<script src="http://\' + (location.host    \'localhost\').split(\':\')[0] +\':35729/livereload.js?snipver=1"></\' + \'script>\')</script>';
+    }
 }
 add_action( 'wp_footer', 'liveReload',100 );
+
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+    // additional image sizes
+    add_image_size( 'sidebar-thumb', 850, 9999 ); //425 pixels wide (and unlimited height)
+}

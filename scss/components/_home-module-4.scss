@@ -1,0 +1,85 @@
+.how-to-pay {
+  color: $white;
+  background: #0C77AE;
+  padding-top: 341px;
+  padding-bottom: 92px;
+  font-family: 'Raleway', sans-serif;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 1em;
+  }
+
+  p.blurb {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    padding-top: 156px;
+    padding-bottom: 2em;
+
+    h2 {
+      font-size: 19px;
+    }
+
+    p {
+      font-size: 8px;
+    }
+
+    p.blurb {
+      font-size: 18px;
+    }
+  }
+}
+
+.how-to-pay-bg {
+  background: url('../img/bg-how-to-pay.png') center 0 no-repeat;
+  height: 410px;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-77px);
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.51 120.83"><defs><style>.cls-1{fill:#FFB206;}</style></defs><title>chevron</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_3" data-name="Layer 3"><polygon class="cls-1" points="380.51 0 0 0 0 69.51 44.55 69.51 190.95 120.83 336.38 69.51 380.51 69.51 380.51 0"/></g></g></svg>');
+    background-size: auto 120px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    transform: none;
+
+    h2 {
+      font-size: 19px;
+    }
+
+    p.blurb {
+      font-size: 18px;
+    }
+
+    &::before {
+      background: url('../img/how-to-pay.png') center 0 no-repeat;
+      background-size: cover;
+      content: '';
+      height: 156px;
+      width: 156px;
+      display: block;
+      margin: 0 auto;
+      z-index: 2;
+      position: relative;
+    }
+
+    &::after {
+      content: ''; 
+      width: 100%;
+      height: 70px;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      background: $sherpa-brand-primary;
+      background-position: center top;
+    }
+  }
+} 

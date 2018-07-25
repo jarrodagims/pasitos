@@ -1,0 +1,106 @@
+.who-we-are {
+
+  .bg-kid {
+    background: #F8F8F8 url('../img/bg-who-we-are.jpg') 0 0 no-repeat;
+    background-size: cover;
+    
+    p {
+      color: #919090;
+    }
+  }
+
+  .col-md-6 {
+    padding: 0 0;
+  }
+
+  h2 {
+    color: $purple;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .bg-purple {
+    background: $purple;
+    color: $white;
+
+    p {
+      color: $white;
+    }
+
+    h2 {
+      color: $white;
+    }
+  }
+
+  .bg-cog {
+    background: url('../img/who-we-are.png') 113% 0 no-repeat;
+    height: 100%;
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    .extra-padding {
+      padding: 5em;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+     .extra-padding {
+       padding: 110px 100px 110px 100px;
+        text-align: left;
+     }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .extra-padding {
+      padding: 110px 300px 110px 100px;
+    }
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    h2 {
+      font-size: 19px;
+    }
+      
+      text-align: center;
+
+      .bg-kid {
+        height: 221px;
+        background: url('../img/bg-kid-small.jpg') 0 0 no-repeat;
+        background-size: cover;
+
+        .bg-cog {
+          display: none;
+        }
+      }
+
+      .bg-purple {
+        padding-top: 120px;
+
+        &:after {
+          content: '';
+          background: url('../img/who-we-are-small.png') 0 0 no-repeat;
+          width: 186px;
+          height: 186px;
+          display: block;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -80px;
+          background-size: cover;
+        }
+      }
+
+      .bg-white {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+        p {
+          margin-bottom: 0;
+        }
+      } 
+  }
+}

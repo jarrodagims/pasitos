@@ -28,10 +28,36 @@
           });
       });
 
-      $('.expander').click(function(){
-          $('.expand').toggle();
-          $('.expander').toggleClass('expanded');
+      $('.expander').click(function () {
+          if ($(window).width() < 767) {
+              $($(this).data("target")).slideToggle();
+              $(this).toggleClass('expanded');
+          }
       });
+
+      $('.sidebar-expander').click(function () {
+          $($(this).data("target")).slideToggle();
+          $(this).toggleClass('sidebar-expanded');
+      });
+
+      var resizeStream = Rx.Observable.fromEvent($(window), 'resize')
+          .debounce(500);
+
+      var resizeSub = resizeStream.subscribe(
+          function (x) {
+              if ($(window).width() > 767) {
+                  $('.expander').each(function( index ) {
+                      $($(this).data("target")).show();
+                      $(this).removeClass('expanded');
+                  });
+              }
+          },
+          function (err) {
+              console.log('Error: ' + err);
+          },
+          function () {
+          }
+      );
 
   });
 })(jQuery);

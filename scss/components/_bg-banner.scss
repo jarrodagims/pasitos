@@ -1,0 +1,11 @@
+.bg-banner {
+  background: url('../img/bg-banner.jpg') center 0 no-repeat;
+  min-height: 385px;
+  background-size: cover;
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    min-height: 160px;
+    background: url('../img/bg-banner-small.jpg') 0 0 no-repeat;
+    background-size: cover;
+  }
+}

@@ -25,26 +25,27 @@
 
             echo "<article>\n";
             echo "<div class=\"sidebar-content\">";
-            echo "<div class=\"content\"><h1 class=\"post-title\">";
-            if (get_field('page_title', $pageid)) :
-            echo get_field('page_title', $pageid);
-            else:
-            the_title();
-            endif;
-            echo "</h1></div>";
             get_sidebar();
             echo "<div class=\"content page-content\">";
             the_content();
-           if (!is_page('contact-us')) :
             ?>
             <div class="banner-bottom">
-                <div class="diamond-container"><div class="diamond-bg">
-                    <?php get_template_part('template-parts/icon', 'mini-diamond'); ?>
-                </div></div>
-                <p>IN THE <strong>SOUTHWEST</strong>
-                <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-success">CONTACT FORM</button></a></p>
+               <p>Understanding the Positive Impact of Pediatric Therapy<br />
+                <a href="<?=SITEURL ?>/contact-us/" class="button">
+                    <button class="btn btn-primary">
+                        CONTACT US TODAY
+                    </button>
+                </a></p>
             </div>
-           <?php endif; ?>
+           <?php
+           if (get_field('page_bottom', $pageid)) { ?>
+               <section class="page-bottom">
+                       <div class="row">
+                           <div class="col-xs-12"><?php echo get_field('page_bottom', $pageid); ?></div>
+                       </div>
+               </section>
+           <?php  }
+            ?>
             <div class="content">
             <?php
             if (get_field('page_two', $pageid)) { ?>

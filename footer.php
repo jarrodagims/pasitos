@@ -1,43 +1,47 @@
-<div id="map-section">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6778.87574133545!2d-106.578747!3d31.840298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedae839ec7587df4!2sCountry+Club+Urgent+Care+Center!5e0!3m2!1sen!2sus!4v1530026669558" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+<?php if (!is_page('contact-us')) : ?>
+    <div id="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13567.130899977785!2d-106.4250822!3d31.7764115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc91b2ee97468a38b!2sPasitos+Clinic!5e0!3m2!1sen!2sus!4v1532102532357" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+<?php endif; ?>
+<div class="container-fluid sub-header top-header footer-header">
+        <a class="navbar-brand visible-sm visible-xs" href='<?php echo get_site_url() ?>'><img
+                src="<?= IMGURL ?>logo.png"
+                alt="<?php echo get_bloginfo('description'); ?>"/></a>
+        <div class="row ">
+            <div class="v-align">
+                <a class="navbar-brand hidden-xs hidden-sm" href='<?php echo get_site_url() ?>'><img
+                            src="<?= IMGURL ?>logo.png"
+                            alt="<?php echo get_bloginfo('description'); ?>"/></a>
+                <div class="col-xs-12 col-md-10 navbar-button text-center">
+                    <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+                </div>
+            </div>
+        </div>
 </div>
 <section id="footer">
     <div class="container">
             <div class="row flex-row">
-                <div class="col-sm-4 col-md-4 col-xs-12 logo-footer">
-                    <span class="title">&nbsp;</span>
-                    <a class="navbar-brand" href='<?php echo get_site_url() ?>'><img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
-                                alt="<?php echo get_bloginfo('description'); ?>"/></a>
+                <div class="col-xs-12 logo-footer">
+                    <p><span>PASITOS CLINIC</span> provides pediatric therapy services to children in the
+                    El Paso area.</p>
                 </div>
-                <div class="col-sm-4 col-md-2 col-xs-12 contact-footer">
-                    <span class="title">Contact</span>
-                        <p>8041 North Mesa, Suite B2<br />
-                            El Paso, TX 79932<br />
-                            <span>PH.</span>  (915) 307-3870<br />
-                            <span>FAX.</span> (915) 581-2926<br/>
-                        </p>
+                <div class="col-xs-12 contact-footer">
+                    <div><span class="title">CONTACT</span>
+                    <p>406 Chelsea St<br />
+                        El Paso, TX 79905<br />
+                        PH. (915) 307-7612
+                    </p></div>
                 </div>
-                <div class="col-sm-4 col-md-3 col-xs-12 hours-footer">
-                    <div><span class="title">Hours</span>
-                    <p>Monday-Friday : 7:00 AM - 10:00 PM<br />
-                        Saturday: 9:00 AM - 9:00 PM<br />
-                        Sunday: 9:00 AM - 10:00 PM<br />
-                        <span>Last Patient Will be Seen 30 Minutes Before Close</span>
-                    </p>
-                    </div>
-
+                <div class="col-xs-12 hours-footer">
+                    <div><span class="title">OFFICE HOURS</span>
+                    <p>Monday thru Friday:<br />
+                        9:00am - 6:00pm<br />
+                        Saturday & Sunday: Closed
+                    </p></div>
                 </div>
-
-                <div class="col-sm-4 col-md-1 button-footer"><span class="title hidden-xs">&nbsp;</span>
-                    <a href="<?= SITEURL ?>/contact-us" class="hidden-xs"><button class="btn btn-md btn-success">SCHEDULE AN APPOINTMENT</button></a>
-
-                    <div class="visible-xs">
-                        <?php if(is_front_page()) : ?>
-                            <a href="<?= SITEURL ?>/contact-us"><button class="btn btn-md btn-success">SCHEDULE AN APPOINTMENT</button></a>
-                        <?php else : ?>
-                            <a href="<?= SITEURL ?>/contact-us"><button class="btn btn-md btn-success">SCHEDULE AN APPOINTMENT</button></a>
-                        <?php endif; ?>
+                <div class="col-xs-12 button-footer">
+                    <div>
+                    <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary btn-md">CONTACT US TODAY</button></a>
                     </div>
                 </div>
             </div>
@@ -47,15 +51,6 @@
         $sm->showNetworkButtons();
         $sm->setColorType('singleColor');
         ?></div>
-</section>
-<section class="footer-nav hidden-xs">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <?php echo non_responsive_bs_menu('footer'); ?>
-            </div>
-        </div>
-    </div>
 </section>
 <section id="sub-footer">
     <div class="container">
@@ -67,9 +62,7 @@
                     $sm->setColorType('singleColor');
                     ?></div>
                     <div>
-                    &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | All Rights Reserved | Powered by AGI Marketing <a href="https://www.agims.com/" target="_blank"><img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/agi-logo.png" alt="AGI Marketing"
-                                class="agi-logo"/></a>
+                    &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | All Rights Reserved | Powered by AGI Marketing <a href="https://www.agims.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/agi-logo.png" alt="AGI Marketing" class="agi-logo"/></a>
                 </div>
             </div>
         </div>

@@ -1,17 +1,19 @@
 body {
-  color: #848483;
+  color: #666666;
 }
 
 h1 {
-  color: #1E242D;
+  color: $purple;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 
   span {
     color: $sherpa-brand-primary;
@@ -34,5 +36,28 @@ body {
 @media screen and (max-width: $screen-sm-min) {
   .text-center-sm {
     text-align: center;
+  }
+}
+
+.serif-text {
+  font-family: 'Rufina', serif;
+  color: #8F9699;
+}
+
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+
+  #main {
+    .container {
+      article {
+        h1 {
+          font-size: 2em;
+        }
+
+        p.blurb {
+          font-size: 1em;
+        }
+      }
+    }
   }
 }

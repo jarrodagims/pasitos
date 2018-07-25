@@ -2,39 +2,22 @@
 #footer {
   padding: 4em 0;
   text-align: center;
+  background: #24282D;
+  color: $white;
 
-  @media screen and (max-width: $screen-sm-min) {
-        text-align: left;
+  a.arrow {
+     font-weight: 500;
+
+      &:hover {
+        text-decoration: none;
+      }
   }
 
-  @media screen and (min-width: $screen-md-min) {
-    .logo-footer {
-      width: 311px;
-    }
-
-    .contact-footer, .hours-footer, .button-footer, .logo-footer, .button-footer {
-
-      box-sizing: content-box;
-    }
-
-    .contact-footer {
-      width: 257px;
-    }
-
-    .hours-footer {
-      width: 358px;
-    }
+  @media screen and (min-width: $screen-sm-min) {
+    text-align: left;
 
     .button-footer {
-      width: 283px;
-    }
-  }
-
-  .button-footer {
-
-    .btn-success {
-      padding: 20px 30px;
-      max-width: 100%;
+        text-align: right;
     }
   }
 
@@ -49,38 +32,20 @@
 
   span {
     color: $sherpa-brand-primary;
-    font-weight: bold;
   }
 
-  .hours-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  
 
-    a {
-      margin: 35px 0;
-    }
-
-    span {
-      font-weight: 300;
-      font-size: 11px;
-    }
-  }
-
-  @media screen and (min-width: $screen-md-min) {
-    .hours-footer {
-      flex-direction: row;
-
-      a {
-        width: 309px;
-      }
-    }
-  }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
+    
+    p {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     ul {
-      margin: 0 auto;
+      margin: 20px auto;
       overflow: auto;
       width: auto;
       display: inline-block;
@@ -90,19 +55,18 @@
       text-align: center;
       width: auto;
     }
-    .hours-footer {
-      a {
-        margin: 35px auto;
-      }
+
+    a.arrow {
+      margin-bottom: 2em;
+     
     }
 
     .button-footer {
-
-    .btn-success {
-      font-size: 8px;
-      padding: 11px 25px;
+      .btn-border {
+        font-size: 11px;
+        padding: 24px 17px;
+      }
     }
-  }
   }
 
   .menu-primary-container {
@@ -110,8 +74,9 @@
   }
 
   p {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.75;
   }
 
   ul {
@@ -122,10 +87,22 @@
     list-style: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   a {
     color: #fff;
+  }
+
+  a.btn {
+    &:hover {
+      background: $sherpa-brand-primary;
+      border-color: $sherpa-brand-primary;
+    }
   }
 
   .full-height {
@@ -146,9 +123,9 @@
     text-align: center;
 
     img {
-     
       width: auto;
-      height: auto;
+      height: 127px;
+      margin-top: -6px;
     }
   }
 
@@ -188,14 +165,8 @@
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    color: $sherpa-brand-primary;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
-  }
-
-  .textwidget img {
-    display: inline;
-    margin: 0 0.5em 0 0;
   }
 
   .social-media-button {
@@ -205,18 +176,24 @@
   @media screen and (min-width: $screen-md-min) {
     text-align: left;
 
+    .contact-footer, .hours-footer {
+      display: flex;
+      justify-content: center;
+    }
+
     span.title {
       margin: 0 0 0.5em;
       display: block;
       font-size: 18px;
+      color: $sherpa-brand-primary;
     }
-
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
     span.title {
-      font-size: 13px;
+      font-size: 11px;
       margin-bottom: 0;
+      color: $sherpa-brand-primary;
     }
 
     .social-container {
@@ -224,7 +201,10 @@
     }
 
     p {
-      font-size: 12px;
+      font-size: 11px;
+      line-height: 1.75;
+      font-weight: 300;
+      margin-bottom: 2em;
     }
   }
 
@@ -232,23 +212,6 @@
     color: #fff;
     padding: 1.5em 0;
     margin-top: 4em;
-
-    .footer-bottom-border {
-      &:before {
-        content: '';
-        background: rgba(182, 130, 78, 1);
-        background: -moz-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182, 130, 78, 1)), color-stop(100%, rgba(229, 204, 164, 1)));
-        background: -webkit-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
-        background: -o-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
-        background: -ms-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
-        background: linear-gradient(to right, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b6824e', endColorstr='#e5cca4', GradientType=1);
-        height: 1px;
-        width: 100%;
-        display: block;
-      }
-    }
 
     ul li {
       text-transform: uppercase;
@@ -271,29 +234,9 @@
   }
 }
 
-#visit-section {
-  text-align: center;
-  background: #e6e6e6;
-  padding: 3em 0;
-  margin-bottom: 0 !important;
-
-  &.jumbotron {
-    h3 {
-      font-size: 30px;
-    }
-
-    p.blurb {
-      font-size: 24px;
-    }
-
-    p {
-      font-size: 20px;
-    }
-  }
-}
 
 .footer-nav {
-  background: $dark-blue;
+  background: #0D273F;
   color: #fff;
 
   .navbar-sherpa {
@@ -314,10 +257,14 @@
     color: $white;
     font-weight: 300;
 
+    &:hover {
+      color: $sherpa-brand-primary;
+    }
+
   }
 
   .navbar-sherpa .navbar-nav > .active > a {
-    color: $white !important;
+    color: $white;
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
@@ -326,9 +273,9 @@
 }
 
 #sub-footer {
-  padding: 2em 0;
+  padding: 32px 0;
   text-align: center;
-  background: #e7e7e7;
+  background: #fff;
   color: #263238;
   font-size: 16px;
   .agi-logo {
@@ -365,52 +312,14 @@
   }
 }
 
-#map-section {
-  height: 214px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  a {
-    color: #fff;
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-
-    .btn {
-      border-color: #fff;
-      background: transparent;
-    }
-  }
-}
-
-.page-template-default {
-  #map-section {
-    height: 220px;
-
-    @media screen and (max-width: $grid-float-breakpoint-max) {
-      height: 125px;
-    }
-  }
-}
-
-@media screen and (max-width: $screen-sm-min) {
-  #map-section {
-    height: 110px;
-  }
-}
 
 @media screen and (max-width: $screen-sm-max) {
 
   #sub-footer {
-    background: #23303F;
-    color: #fff;
+    background: #fff;
+    color: #263238;
     font-size: 10px;
+    padding: 1em 0;
 
     img {
       width: 24px;
@@ -419,7 +328,7 @@
   }
 
   #footer {
-    padding: 2em 0;
+    padding: 1em 0;
 
     a {
       width: auto;
@@ -430,7 +339,7 @@
     }
 
     span.title {
-      margin: 1em 0 1em 0;
+      margin: 0 0 1em 0;
     }
 
     .navbar-brand {
@@ -440,24 +349,53 @@
       }
     }
 
-    .text-right {
-      text-align: center !important;
-    }
-
     @media screen and (max-width: $grid-float-breakpoint-max) {
       padding-bottom: 0;
+
+      
+
+      .navbar-brand {
+        position: relative !important;
+        margin-bottom: 20px;
+
+        img {
+          max-height: 97px;
+        }
+      }
     }
   }
 }
 
 @media screen and (max-width: $grid-float-breakpoint-max) {
+ 
+}
+
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
   #footer {
-    .btn-success {
-      margin: 2em 0;
+    
+    a {
+      display: block;
+    }
+
+    .btn {
+      font-size: 10px;
+      padding: 12px 12px;
+      font-size: 6px;
+    }
+    
+    .btn-border {
+      margin: 0 0 2em;
+      background: #008BF2;
+      border: 0;
     }
 
     .social-media-button {
-      color: #23303F;
+      color: #fff;
+
+      &:hover {
+        color: $sherpa-brand-primary !important;
+      }
     }
   }
 }

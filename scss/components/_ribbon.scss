@@ -1,0 +1,183 @@
+.ribbon {
+  background: $dark-blue;
+  padding: 40px 0;
+  position: relative;
+  z-index: 999;
+  font-weight: 300;
+  text-align: center;
+
+  &.trees-banner {
+    background: url('../img/landscape.jpeg') center center no-repeat;
+    background-size: cover;
+    height: 227px;
+  }
+
+  div {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-col.text-right {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .button {
+    margin-left: 75px;
+    display: block;
+    &::before {
+      content: '';
+      border-left: 1px solid $white;
+      height: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+    }
+
+    .btn {
+      padding: 24px 20px;
+      font-size: 15px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+    display: inline-block;
+    color: #F8F8F8;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: relative;
+    margin-right: 42px;
+
+
+    &.arrow {
+      margin-right: 75px;
+      padding-right: 75px;
+      text-transform: uppercase;
+      font-size: 21px;
+    }
+
+    &.arrow::after {
+      @include svg-arrow(#008BF2);
+      display: block;
+      padding-right: 20px;
+      content: '';
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.arrow:hover::after {
+      @include svg-arrow(#006ebf);
+    }
+  }
+
+  .flex-row .flex-col {
+    text-align: left;
+    flex-direction: row;
+  }
+
+  .social-media-button {
+    color: $sherpa-brand-primary;
+    display: inline-block;
+  }
+
+  ul {
+    margin-bottom: 0;
+    margin-left: 46px;
+  }
+
+
+  @media screen and (min-width: $screen-md-min) {
+    padding: 66px 0;
+
+    &.contact-ribbon {
+      padding: 33px 0;
+    }
+
+    h4 {
+      font-size: 25px;
+    }
+
+
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &.trees-banner {
+      height: 140px;
+    }
+
+    &.contact-ribbon {
+       padding-top: 24px;
+       padding-bottom: 10px;
+//        z-index: -1;
+       position: relative; 
+
+       h4 {
+         font-size: 12px;
+       }
+    
+      .flex-row {
+       flex-direction: column-reverse;
+      }
+
+      .button {
+        margin-left: auto;
+        margin-right: auto;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .flex-row .flex-col {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .btn.btn-border {
+      font-size: 10px;
+      padding: 14px 10px;
+    } 
+
+
+    h4 {
+      font-size: 21px;
+      margin: 0 auto;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    h4.arrow {
+      margin: 20px 20px 0;
+      padding: 0;
+      overflow: auto;
+      position: relative;
+      line-height: 1.5;
+
+      &::after {
+        display: block;
+        clear: both;
+        position: relative;
+        padding: 0 0;
+        background-size: 29px;
+        width: 29px;
+        height: 29px; 
+        margin: 20px auto 0;
+      }
+    }
+  }
+}

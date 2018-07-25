@@ -2,21 +2,33 @@
 // Mixin for creating additional buttons:
 //      button-variant($color, $background, $border)
 
-.btn-read-more {
-  background: $sherpa-brand-primary;
-  color: #fff;
-}
 
-.btn {
-  padding: 22px 66px;
+.btn { 
+  padding: 32px;
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
+  border-radius: 50px;
 
-  &:hover {
-    background: $sherpa-brand-primary;
-    color: $white;
-    border-color: $sherpa-brand-primary;
+  &.btn-default {
+    &:hover {
+      background: rgba(36,40,45,0.8);
+      border-color: rgba(36,40,45,0.8);
+    }
+  }
+
+  &.btn-register {
+    padding: 24px 31px;
   }
 }
 
+
+.btn-read-more {
+  &.btn-border {
+    color: $sherpa-brand-primary;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

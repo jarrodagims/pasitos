@@ -1,0 +1,60 @@
+.home-module-3 {
+  padding: 100px 0;
+
+  h2 {
+    color: $purple;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  p.blurb {
+    color: $purple;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+
+  .extra-padding {
+    padding-left: 83px;
+  }
+
+  .img-responsive {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      .extra-padding {
+        padding-left: 0;
+        text-align: center;
+      }
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    padding: 20px 0;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 19px;
+    }
+
+    .extra-padding {
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #848483;
+    }
+
+    p.blurb {
+      font-size: 18px;
+    }
+  }
+}

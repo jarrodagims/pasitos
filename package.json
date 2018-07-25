@@ -5,17 +5,20 @@
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "imagemin": "^5.3.1",
     "imagemin-pngcrush": "^5.1.0",
-    "imagemin": "^5.3.1"
+    "postcss": "^6.0.23",
+    "postcss-cli-simple": "^1.0.4"
   },
   "devDependencies": {
     "gulp-compass": "^2.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path  --source-map  scss scss/style.scss css/style.css",
+    "build-css": "node-sass --include-path  --source-map  scss scss/style.scss css/style.css --output-style compressed",
+    "prefix": "postcss  css/style.css --use autoprefixer -r",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "start": "livereload && watch-css"
+    "start": "livereload"
   },
   "author": "",
   "license": "ISC"
