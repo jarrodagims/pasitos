@@ -1,6 +1,4 @@
-<?php get_header();
-
-/*
+<?php get_header(); /*
     Template Name: Home
 */ ?>
 
@@ -15,7 +13,7 @@
                         <h1>
                             Pediatric <span>Therapy</span> Services
                         </h1>
-                        <a href="<?= SITEURL ?>/contact-us/" class="button">
+                        <a href="<?= SITEURL; ?>/contact-us/" class="button">
                             <button class="btn btn-primary">
                                 CONTACT US TODAY
                             </button>
@@ -30,32 +28,44 @@
         <div class="container">
             <div class="row flex-row">
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/physical-therapy/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'pediatric'); ?>
+                    <a href="<?= SITEURL; ?>/physical-therapy/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'pediatric'
+                        ); ?>
                         <div class="title">Pediatric Physical
                             Therapy
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/occupational-therapy/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'occupational'); ?>
+                    <a href="<?= SITEURL; ?>/occupational-therapy/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'occupational'
+                        ); ?>
                         <div class="title">Pediatric Occupational
                             Therapy
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/speech-therapy/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'speech'); ?>
+                    <a href="<?= SITEURL; ?>/speech-therapy/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'speech'
+                        ); ?>
                         <div class="title">Pediatric Speech
                             Therapy
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/behavioral-therapy/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'behavioral'); ?>
+                    <a href="<?= SITEURL; ?>/behavioral-therapy/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'behavioral'
+                        ); ?>
                         <div class="title">Pediatric Behavioral
                             Therapy
                         </div>
@@ -65,32 +75,44 @@
             <div class="row flex-row no-margin">
 
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/autism-therapy/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'autism'); ?>
+                    <a href="<?= SITEURL; ?>/autism-therapy/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'autism'
+                        ); ?>
                         <div class="title">Autism Therapy
                             Services
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/down-syndrome/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'downs'); ?>
+                    <a href="<?= SITEURL; ?>/down-syndrome/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'downs'
+                        ); ?>
                         <div class="title">Down’s Syndrome Therapy
                             Services
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/physical-therapy/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'feet'); ?>
+                    <a href="<?= SITEURL; ?>/physical-therapy/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'feet'
+                        ); ?>
                         <div class="title">Pediatric Therapy
                             Services
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/cerebral-palsy/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'cerebral'); ?>
+                    <a href="<?= SITEURL; ?>/cerebral-palsy/" class="icon-button">
+                        <?php get_template_part(
+                            'template-parts/icon',
+                            'cerebral'
+                        ); ?>
                         <div class="title">Cerebral Palsy
                         </div>
                     </a>
@@ -167,16 +189,16 @@
 
     <div class="what-we-do-content home-module-2">
         <div class="container-fluid">
-            <img src="<?= IMGURL ?>bg-puzzle-single.png" class="puzzle-img-single" alt="Puzzles"/>
-            <img src="<?= IMGURL ?>bg-puzzle.png" class="puzzle-img" alt="Puzzles"/>
+            <img src="<?= IMGURL; ?>bg-puzzle-single.png" class="puzzle-img-single hidden-xs" alt="Puzzles"/>
+            <img src="<?= IMGURL; ?>bg-puzzle.png" class="puzzle-img" alt="Puzzles"/>
             <div class="row flex-row">
                 <div class="col-xs-12 flex-col">
                     <div class="container">
                         <div class="row flex-row">
-                            <div class="col-xs-12 col-md-6 bg-purple">
-                                <div class="extra-padding"><h3>Helping Children and Families Alike</h3>
+                            <div class="col-xs-12 col-sm-12 col-md-6 bg-purple">
+                                <h3>Helping Children and Families Alike</h3>
 
-                                <p class="blurb">Our unique focus is to address the special needs of children who are
+                                <div class="extra-padding"><p class="blurb">Our unique focus is to address the special needs of children who are
                                     unable to
                                     adapt to society under normal circumstances.</p>
 
@@ -195,22 +217,26 @@
                                     fullest.</p></div>
 
                             </div>
-                            <div class="col-xs-12 col-md-6 bg-puzzle flex-col">
+                            <div class="col-xs-12 col-sm-12 col-md-6 bg-puzzle flex-col">
+                                <img src="<?= IMGURL; ?>bg-puzzle-single.png" class="puzzle-img-single visible-xs" alt="Puzzles"/>
 
                                 <div class="bg-yellow"><div class="bg-list">
-                                    <?php get_template_part('template-parts/icon', 'pediatric'); ?>
+                                    <?php get_template_part(
+                                        'template-parts/icon',
+                                        'pediatric'
+                                    ); ?>
 
                                     <h4>Our Services</h4>
 
                                     <ul>
-                                        <li><a href="<?= SITEURL ?>/physical-therapy/">Pediatric Physical Therapy</a></li>
-                                        <li><a href="<?= SITEURL ?>/speech-therapy/">Pediatric Speech Therapy</a></li>
-                                        <li><a href="<?= SITEURL ?>/occupational-therapy/">Pediatric Occupational Therapy</a></li>
-                                        <li><a href="<?= SITEURL ?>/behavioral-therapy/">Pediatric Behavioral Therapy</a></li>
-                                        <li><a href="<?= SITEURL ?>/autism-therapy/">Autism Therapy Services</a></li>
-                                        <li><a href="<?= SITEURL ?>/physical-therapy/">Pediatric Therapy Services</a></li>
-                                        <li><a href="<?= SITEURL ?>/down-syndrome/">Down’s Syndrome Therapy Services</a></li>
-                                        <li><a href="<?= SITEURL ?>/cerebral-palsy/">Cerebral Palsy</a></li>
+                                        <li><a href="<?= SITEURL; ?>/physical-therapy/">Pediatric Physical Therapy</a></li>
+                                        <li><a href="<?= SITEURL; ?>/speech-therapy/">Pediatric Speech Therapy</a></li>
+                                        <li><a href="<?= SITEURL; ?>/occupational-therapy/">Pediatric Occupational Therapy</a></li>
+                                        <li><a href="<?= SITEURL; ?>/behavioral-therapy/">Pediatric Behavioral Therapy</a></li>
+                                        <li><a href="<?= SITEURL; ?>/autism-therapy/">Autism Therapy Services</a></li>
+                                        <li><a href="<?= SITEURL; ?>/physical-therapy/">Pediatric Therapy Services</a></li>
+                                        <li><a href="<?= SITEURL; ?>/down-syndrome/">Down’s Syndrome Therapy Services</a></li>
+                                        <li><a href="<?= SITEURL; ?>/cerebral-palsy/">Cerebral Palsy</a></li>
                                     </ul>
                                 </div></div>
                             </div>
@@ -251,11 +277,11 @@
                 <div class="col-md-6">
                     <div class="img-responsive">
                         <picture>
-                            <source srcset="<?= IMGURL ?>girl.jpg"
+                            <source srcset="<?= IMGURL; ?>girl.jpg"
                                     media="(min-width: 992px)">
-                            <source srcset="<?= IMGURL ?>girl-medium.jpg"
+                            <source srcset="<?= IMGURL; ?>girl-medium.jpg"
                                     media="(min-width: 768px)">
-                            <img src="<?= IMGURL ?>girl-small.jpg" alt="Girl"/>
+                            <img src="<?= IMGURL; ?>girl-small.jpg" alt="Girl"/>
                         </picture>
                     </div>
                 </div>
@@ -307,12 +333,12 @@
     </section>
 
 
-<?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
-    ?>
+<?php if (is_active_sidebar('form_widgets')) { ?>//if the field is not empty
+    
     <section id="contact-form" class="visible-xs">
         <div class="container" id="contact-form2">
             <div class="row">
-                <div class="<?= FULLWIDTH ?>">
+                <div class="<?= FULLWIDTH; ?>">
                     <?php dynamic_sidebar('form_widgets'); ?>
                 </div>
             </div>

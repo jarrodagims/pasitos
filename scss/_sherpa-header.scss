@@ -2,7 +2,16 @@
   padding-bottom: 0;
 }
 
-.page-template-default, .blog, .error-404, .post-template-default {
+
+@media screen and (min-width: $screen-md-min) {
+
+.error404 #main {
+  padding-top: 250px;
+}
+}
+
+.page-template-default, .blog, .error404, .post-template-default {
+    
     .sub-header.top-header {
       background: url('../img/bg-header.png') center center no-repeat;
     }
@@ -23,7 +32,7 @@
     }
   }
 
-  .page-template-default, .blog, .error-404, .post-template-default {
+  .page-template-default, .blog, .error404, .post-template-default {
     .sub-header.top-header {
       background: url('../img/bg-header-small.png') center top no-repeat;
     }
@@ -31,8 +40,8 @@
 
 
   .sub-header.top-header.footer-header { 
-      background: #24282D url('../img/bg-header-small.png') center center !important;
-      height: 100px;
+      background: #24282D url('../img/bg-header-small.png') center top no-repeat !important;
+      height: 100px !important;
 
       .navbar-toggle {
         display: none;
@@ -41,6 +50,20 @@
 }
 
 .page-template-page-home {
+@media screen and (max-width: $grid-float-breakpoint-max) {
+  .sub-header.top-header {
+      background: transparent url('../img/bg-header-small.png') center top no-repeat;
+      position: absolute;
+      height: 164px;
+      width: 100%;
+
+      &.footer-header {
+        position: relative;
+        background-repeat: no-repeat;
+      }
+ } 
+}
+
   @media screen and (min-width: $screen-md-min) {
     .sub-header.top-header {
       position: absolute;
@@ -56,7 +79,7 @@
 
 
 @media screen and (min-width: $screen-md-min) {
-   .page-template-default, .blog, .error-404, .post-template-default {
+   .page-template-default, .blog, .error404, .post-template-default {
     .sub-header.top-header {
       min-height: 168px;
       background: url('../img/bg-header.png') center center;
@@ -68,7 +91,7 @@
 
 @media screen and (min-width: $screen-sm-min) {
 
-  .page-template-default, .blog, .error-404, .post-template-default {
+  .page-template-default, .blog, .error404, .post-template-default {
     .sub-header.top-header {
       background: url('../img/bg-header.png') center center no-repeat;
     }

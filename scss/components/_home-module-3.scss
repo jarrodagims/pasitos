@@ -5,14 +5,19 @@
     color: $purple;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+  }
+
+  p {
+    line-height: 1.75;
+    margin-bottom: 2em;
   }
 
   p.blurb {
     color: $purple;
     font-size: 25px;
-    line-height: 1.5;
-    margin-bottom: 1em;
+    line-height: 1.75;
+    margin-bottom: 1.75em;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
   }
@@ -42,6 +47,8 @@
 
     h2 {
       font-size: 19px;
+      margin-top: 2em !important;
+      margin-bottom: 1.25em;
     }
 
     .extra-padding {

@@ -1,12 +1,12 @@
 // Include Variables
-@import "sherpa-variables";
-@import "bootstrap-variables";
+@import 'sherpa-variables';
+@import 'bootstrap-variables';
 
 // Include Bootstrap
-@import "bootstrap";
+@import 'bootstrap';
 
 // Include styles needed by WordPress for the editor to work right
-@import "wp-core";
+@import 'wp-core';
 
 // Non-responsiveness Setup - uncomment if this is going to be a non-responsive site
 //@import 'non-responsive';
@@ -16,32 +16,31 @@
 //@import "jquery.colorbox";
 
 // Special components
-@import "icons";
-@import "sherpa-mixins";
-@import "sherpa-navbar";
-@import "sherpa-buttons";
-@import "sherpa-general"; 
-@import "sherpa-socialmedia";
+@import 'icons';
+@import 'sherpa-mixins';
+@import 'sherpa-navbar';
+@import 'sherpa-buttons';
+@import 'sherpa-general';
+@import 'sherpa-socialmedia';
 
-
-// Sections 
-@import "sherpa-header";
-@import "sherpa-main";
-@import "sherpa-sidebar";
-@import "sherpa-footer";
+// Sections
+@import 'sherpa-header';
+@import 'sherpa-main';
+@import 'sherpa-sidebar';
+@import 'sherpa-footer';
 
 // Styling Specifically for the home page
-@import "sherpa-home";
+@import 'sherpa-home';
 
-@import "typography";
+@import 'typography';
 
-@import "components/jumbotron";
-@import "components/map";
-@import "components/contact-form";
-@import "components/center-text";
-@import "components/home-module-1";
-@import "components/home-module-2";
-@import "components/home-module-3";
-@import "components/home-module-4";
-@import "components/ribbon";
-@import "components/bg-banner";
+@import 'components/jumbotron';
+@import 'components/map';
+@import 'components/contact-form';
+@import 'components/center-text';
+@import 'components/home-module-1';
+@import 'components/home-module-2';
+@import 'components/home-module-3';
+@import 'components/home-module-4';
+@import 'components/ribbon';
+@import 'components/bg-banner';

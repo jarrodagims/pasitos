@@ -1,7 +1,7 @@
 .who-we-are {
 
   .bg-kid {
-    background: #F8F8F8 url('../img/bg-who-we-are.jpg') 0 0 no-repeat;
+    background: #F8F8F8 url('../img/bg-who-we-are.jpg') center center no-repeat;
     background-size: cover;
     
     p {
@@ -21,6 +21,7 @@
     font-size: 25px;
   }
 
+
   .bg-purple {
     background: $purple;
     color: $white;
@@ -37,11 +38,12 @@
   .bg-cog {
     background: url('../img/who-we-are.png') 113% 0 no-repeat;
     height: 100%;
+    width: 100%;
   }
 
   @media screen and (min-width: $screen-sm-min) {
     .extra-padding {
-      padding: 5em;
+      padding: 5em 3em;
       text-align: center;
     }
   }
@@ -55,22 +57,20 @@
 
   @media screen and (min-width: 1600px) {
     .extra-padding {
-      padding: 110px 300px 110px 100px;
+      padding: 110px 300px 110px 70px;
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
-
-    h2 {
-      font-size: 19px;
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .row.flex-row {
+      flex-direction: column;
     }
-      
-      text-align: center;
 
-      .bg-kid {
+    .bg-kid {
         height: 221px;
-        background: url('../img/bg-kid-small.jpg') 0 0 no-repeat;
+        background: url('../img/bg-kid-small.jpg') center center no-repeat;
         background-size: cover;
+        width: 100%;
 
         .bg-cog {
           display: none;
@@ -78,7 +78,7 @@
       }
 
       .bg-purple {
-        padding-top: 120px;
+        padding-top: 5em;
 
         &:after {
           content: '';
@@ -90,6 +90,48 @@
           left: 50%;
           transform: translateX(-50%);
           top: -80px;
+          background-size: cover;
+        }
+      }
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    h2 {
+      font-size: 19px;
+      
+    }
+      
+      text-align: center;
+
+      .bg-kid {
+        height: 221px;
+        background: url('../img/bg-kid-small.jpg') center 0 no-repeat;
+        background-size: cover;
+
+        .bg-cog {
+          display: none;
+        }
+      }
+
+      .bg-purple {
+        padding-top: 140px;
+        padding-bottom: 0;
+
+        p {
+          font-size: 14px;
+        }
+
+        &:after {
+          content: '';
+          background: url('../img/who-we-are-small.png') 0 0 no-repeat;
+          width: 186px;
+          height: 186px;
+          display: block;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -65px;
           background-size: cover;
         }
       }

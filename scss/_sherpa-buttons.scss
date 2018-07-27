@@ -25,7 +25,9 @@
 
 .btn-read-more {
   &.btn-border {
-    color: $sherpa-brand-primary;
+    color: $white;
+    background: $sherpa-brand-primary;
+    padding: 20px;
 
     &:hover {
       color: $white;

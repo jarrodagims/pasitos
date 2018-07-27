@@ -8,9 +8,7 @@
   height: 406px;
 
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
-    
-
+  @media screen and (max-width: $screen-sm-max) {
     background: none;
     height: 177px;
   }
@@ -46,17 +44,20 @@
   p.blurb {
     font-size: 25px;
     font-weight: 300;
-    line-height: 1.5;
-    margin-top: 50px;
+    line-height: 1.75;
+    margin-top: 34px;
     margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
   }
 
   .bg-list {
     background: $white;
     text-align: center;
-    padding-top: 260px;
-    margin-left: 52px;
+    padding-top: 202px;
+    margin-left: 72px;
     height: 100%;
+    min-width: 500px;
+    max-width: 100%;
 
     svg {
       width: 52px;
@@ -72,6 +73,8 @@
       list-style: none;
       font-size: 17px;
       padding-left: 0;
+      margin-top: 1.5em;
+
       li {
         background: #F8F8F8;
         border-bottom: 1px solid $white;
@@ -79,7 +82,7 @@
         a {
           display: block;
           color: #919090;
-          padding: 1em;
+          padding: 1.5em;
 
           &:hover {
             text-decoration: none;
@@ -92,9 +95,25 @@
   }
 
   .bg-purple {
-    padding-right: 99px;
-    padding-bottom: 88px;
-    padding-top: 260px;
+    padding-top: 240px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+
+  @media screen and (min-width: $screen-md-min) {
+
+    .flex-row {
+      flex-direction: row;
+    }
+    
+    .bg-purple {
+      padding-right: 99px;
+      padding-bottom: 88px;
+      padding-top: 240px;
+    }
   }
 
   .container-fluid {
@@ -116,13 +135,15 @@
     }
   }
 
+  
+
   @media screen and (min-width: 1800px) {
     .puzzle-img, .puzzle-img-single {
        z-index: 99;
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @media screen and (max-width: $screen-sm-max) {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.51 120.83"><defs><style>.cls-1{fill:#0c77ae;}</style></defs><title>chevron</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_3" data-name="Layer 3"><polygon class="cls-1" points="380.51 0 0 0 0 69.51 44.55 69.51 190.95 120.83 336.38 69.51 380.51 69.51 380.51 0"/></g></g></svg>');
     background-size: auto 120px;
     background-repeat: no-repeat;
@@ -138,7 +159,7 @@
 
     p.blurb {
       font-size: 18px;
-      margin: 2em 0;
+      margin: 1.5em 0;
     }
 
     p {
@@ -151,9 +172,9 @@
     }
 
     .puzzle-img-single {
-      top: 45%;
+      top: -20px;
       width: 77px;
-      left: 4em;
+      left: 3.8em;
     }
 
     .container-fluid {
@@ -163,7 +184,7 @@
     }
 
     .bg-purple {
-      padding: 0;
+      padding: 2em 0;
       text-align: center;
     }
 
@@ -177,6 +198,7 @@
       margin: 0 auto;
       position: relative;
       z-index: 1;
+      top: 20px;
     }
 
     &::after {
@@ -199,6 +221,10 @@
 
       ul li {
         font-size: 14px;
+
+        a {
+          padding: 1em;
+        }
       }
     }
 

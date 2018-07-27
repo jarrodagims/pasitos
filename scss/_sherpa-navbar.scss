@@ -1,7 +1,7 @@
 // Sherpa navbar
 .page-template-default, .blog, .error404, .post-template-default {
   .sub-header.top-header {
-    min-height: 164px;
+    height: 164px;
     padding-bottom: 50px;
   }
 }
@@ -18,6 +18,10 @@
 
   span {
     color: #FFB206;
+  }
+
+  .spanish {
+    font-family: 'Raleway', sans-serif;
   }
 
   .flex-col {
@@ -630,7 +634,7 @@
 
   }
 
-  .menu-item-38 {
+  .menu-item-38, .menu-item-70 {
     margin-right: 180px;
   }
 
@@ -753,9 +757,9 @@
     }
   }
 
-  .navbar-brand img {
-    margin-bottom: 27px;
-  }
+//   .navbar-brand img {
+//     margin-bottom: 27px;
+//   }
 
   .sub-header.top-header.footer-header {
      .navbar-brand img {

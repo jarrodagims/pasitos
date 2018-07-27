@@ -13,11 +13,17 @@
       }
   }
 
+  .button-footer .btn {
+    padding: 30px;
+  }
+
+
+
   @media screen and (min-width: $screen-sm-min) {
     text-align: left;
 
     .button-footer {
-        text-align: right;
+      text-align: right;
     }
   }
 
@@ -38,7 +44,11 @@
 
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
-    
+     
+     .button-footer .btn {
+    padding: 12px;
+  }
+  
     p {
       padding-left: 20px;
       padding-right: 20px;
@@ -61,11 +71,9 @@
      
     }
 
-    .button-footer {
-      .btn-border {
-        font-size: 11px;
-        padding: 24px 17px;
-      }
+    .btn-border {
+      font-size: 11px;
+      padding: 24px 17px;
     }
   }
 
