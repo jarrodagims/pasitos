@@ -9,6 +9,11 @@
     }
   }
 
+  p {
+    line-height: 2;
+    font-size: 17px;
+  }
+
   .col-md-6 {
     padding: 0 0;
   }
@@ -21,6 +26,9 @@
     font-size: 25px;
   }
 
+  .purple-row {
+    background: $purple;
+  }
 
   .bg-purple {
     background: $purple;
@@ -36,7 +44,7 @@
   }
 
   .bg-cog {
-    background: url('../img/who-we-are.png') 113% 0 no-repeat;
+    background: url('../img/who-we-are.png') 113% -1px no-repeat;
     height: 100%;
     width: 100%;
   }
@@ -96,6 +104,10 @@
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    p {
+      font-size: 14px;
+    }
 
     h2 {
       font-size: 19px;

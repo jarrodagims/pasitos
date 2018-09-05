@@ -145,6 +145,7 @@
       .col-md-4 {
         flex: 0 auto;
         border-left: 0;
+        padding: 0 0;
         border-bottom: 1px solid #fff;
 
         a {
@@ -816,4 +817,8 @@ h2.line {
 
 .row.flex-row {
   display: flex;
+
+  &.purple-row {
+    background: $purple;
+  }
 }

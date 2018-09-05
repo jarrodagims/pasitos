@@ -4,6 +4,12 @@
     height: 164px;
     padding-bottom: 50px;
   }
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .navbar-brand {
+      margin-top: 7px;
+    }
+  }
 }
 
 .navbar-sherpa .navbar-toggle {
@@ -14,7 +20,7 @@
   background: #24282D;
   color: $white;
   padding: 19px 0;
-  font-weight: 600;
+  font-weight: 400;
 
   span {
     color: #FFB206;
@@ -289,7 +295,6 @@
   display: block;
   width: auto; 
   top: 50%;
-
   z-index: 9999;
   
 
@@ -301,13 +306,17 @@
 //     margin-top: -13px;
 //   }
 
-  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    
-    img {
-      width: 130px;
-    }
-  }
+  
 }
+
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+ .page-template-page-home {
+  img {
+    margin-bottom: 39px;
+  }
+ }
+}
+
 
 @media (max-width: $grid-float-breakpoint-max) {
 
@@ -747,7 +756,7 @@
 
   .page-template-page-home {
     .sub-header.top-header .navbar-sherpa {
-      margin-bottom: 50px;
+      margin-bottom: 43px;
     }
 
     .sub-header.top-header.footer-header .navbar-sherpa {
@@ -763,7 +772,7 @@
 
   .sub-header.top-header.footer-header {
      .navbar-brand img {
-          margin-bottom: 0;
+          margin-bottom: 3px;
         }
   }
 }

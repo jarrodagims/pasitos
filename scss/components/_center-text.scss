@@ -26,6 +26,7 @@
   p {
     margin-top: 50px;
     font-size: 17px;
+    line-height: 2;
     color: #919090;
     font-family: 'Roboto', sans-serif;
   }
@@ -51,7 +52,7 @@
        margin-top: 0;
      }
 
-     p.blurb {
+     p.blurb, &.bg-gray p.blurb {
        font-size: 18px;
        margin-top: 1.25em;
        margin-bottom: 1.25em;

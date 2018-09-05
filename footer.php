@@ -1,8 +1,6 @@
-<?php if (!is_page('contact-us')): ?>
     <div id="map-section">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13567.130899977785!2d-106.4250822!3d31.7764115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc91b2ee97468a38b!2sPasitos+Clinic!5e0!3m2!1sen!2sus!4v1532102532357" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-<?php endif; ?>
 <div class="container-fluid sub-header top-header footer-header">
         <a class="navbar-brand visible-sm visible-xs" href='<?php echo get_site_url(); ?>'><img
                 src="<?= IMGURL; ?>logo.png"
@@ -24,7 +22,7 @@
             </div>
         </div>
 </div>
-<section id="footer"> 
+<section id="footer">
     <div class="container">
             <div class="row flex-row">
                 <div class="col-xs-12 logo-footer">

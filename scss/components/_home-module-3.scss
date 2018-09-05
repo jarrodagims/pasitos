@@ -11,6 +11,7 @@
   p {
     line-height: 1.75;
     margin-bottom: 2em;
+    font-size: 17px;
   }
 
   p.blurb {
@@ -40,6 +41,10 @@
   @media screen and (max-width: $grid-float-breakpoint-max) {
     padding: 20px 0;
     text-align: center;
+
+    p {
+      line-height: 2em;
+    }
 
     img {
       margin: 0 auto;

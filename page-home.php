@@ -26,7 +26,7 @@
     </div> <!-- end home-bg -->
     <section class="icon-row">
         <div class="container">
-            <div class="row flex-row">
+            <div class="flex-row">
                 <div class="col-xs-6 col-md-4">
                     <a href="<?= SITEURL; ?>/physical-therapy/" class="icon-button">
                         <?php get_template_part(
@@ -72,7 +72,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row flex-row no-margin">
+            <div class="flex-row no-margin">
 
                 <div class="col-xs-6 col-md-4">
                     <a href="<?= SITEURL; ?>/autism-therapy/" class="icon-button">
@@ -91,7 +91,7 @@
                             'template-parts/icon',
                             'downs'
                         ); ?>
-                        <div class="title">Down’s Syndrome Therapy
+                        <div class="title">Down Syndrome Therapy
                             Services
                         </div>
                     </a>
@@ -125,12 +125,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <div class="extra-padding"><h2><span>Pasitos Clinic:</span> Helping El Paso’s Children Thrive</h2>
+                    <div class="extra-padding"><h2><span>Pasitos Clinic:</span> Helping Families One Step at a Time</h2>
                         <p class="blurb">Children deserve to live their lives to the fullest. A special need or
                             disability shouldn’t stand in your child’s way when it comes to experiencing the world.</p>
 
                         <p>Pasitos Clinic joins efforts in order to help children obtain the highest level of quality
-                            living. We achieve this by helping children to reach developmental milestones in order for
+                            living. We achieve this by helping children reach developmental milestones in order for
                             them to live a full and active life. Our goal is to help families, one step at a time. When
                             a child is embraced by a reputable, multidisciplinary healthcare team—which includes
                             doctors, therapists, psychologists, social workers, and teachers who understand and have the
@@ -152,7 +152,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="container-fluid">
-                        <div class="row flex-row">
+                        <div class="row flex-row purple-row">
                             <div class="col-xs-12 bg-purple">
                                 <div class="extra-padding"><h2>Providing Pediatric Therapy Services to the Children of
                                         El Paso</h2>
@@ -171,7 +171,7 @@
 
                                     <p>Together, our team is completely devoted to helping children with special needs
                                         and their families. Pasitos Clinic is a one-stop clinic evaluating and treating
-                                        children with special needs. We also offer advocacy and emotional support to
+                                        children with special needs. We also offer advocacy and emotional support for
                                         families with special needs children.</p></div>
                             </div>
                         </div>
@@ -206,7 +206,7 @@
                                     services
                                     with the child’s pediatrician, developmental specialist, neurologist, school staff,
                                     and any
-                                    other community based agencies. Not only do we focus on helping the child, we also
+                                    other community-based agencies. Not only do we focus on helping the child, we also
                                     provide
                                     support to assist family members in understanding what the child is facing. It’s
                                     necessary for
@@ -321,7 +321,7 @@
                                 Tricare</strong>.</p>
 
                         <p>Simply put, we accept all Medicaid and some private insurances. Pasitos Clinic is
-                            conveniently located in 406 Chelsea St, El Paso. Being located in El Paso’s Central Area
+                            conveniently located at 406 Chelsea St, El Paso. Being located in El Paso’s Central area
                             gives our team the ability to treat children from all over town. Children and families can
                             join Pasitos Clinic today in order to take their first steps towards rehabilitation! Contact
                             or visit us to find out more about what we can do to help your child live life to the
